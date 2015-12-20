@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="用户名：" android:textSize="24sp"
+            android:gravity="right"/>
+        <EditText android:id="@+id/username_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入用户名"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="密码：" android:textSize="24sp"
+            android:gravity="right"/>
+        <EditText android:id="@+id/pwd_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入用户密码"
+            android:password="true"/>
+    </LinearLayout>
+
+    <Button android:id="@+id/but_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录" android:onClick="login"/>
+</LinearLayout>
